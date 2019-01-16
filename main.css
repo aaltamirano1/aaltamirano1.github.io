@@ -234,6 +234,23 @@ form{
 	} 
 }
 @media (max-width: 500px){
+	body{
+		max-height: 100vh;
+	}
+	nav{
+		max-height: 30%;
+	}
+	main,
+	section{
+		max-height: 70%;
+	}
+	image{
+		max-height: 100%;
+	}
+	nav h1{
+		font-size: 1em;
+	}
+/*************************************** *NAV* ***************/
 	nav .fa-bars{
 		display: initial;
 	}
@@ -261,9 +278,11 @@ form{
 		top: 10px;
 		right: 5px;
 	}
+/*************************************** *MAIN* ***************/
 	#mainPageImage{
 		height: 100vh;
 	}
+/*************************************** *BIO* ***************/
 	#bio #bioImageSmall{
 		display: none;
 	}
@@ -275,10 +294,7 @@ form{
 		margin: 15px 0;
 		width: 90vw;
 	} 
-	.welcome-blurb #long-version{
-		display: none;
-	}
-
+/*************************************** *PORTFOLIO* ***************/
 	#project{
 		flex-direction: column;
 	}
@@ -293,18 +309,28 @@ form{
 	}
 	#project #project-pic{
 		width: 100vw;
-		height: 200px;
+		height: 10px;
+		opacity: 0;
 	}
 	#project #project-info{
 		width: 90vw;
-		height: 35vh;
 		margin: 5px auto;
+		margin-bottom: 60px;
+		height: 56vh;
 		overflow-x: scroll;
 	}
 	#project #project-info button{
 		margin: 10px 0 20px 0;
 	}
+/*************************************** *CONTACT* ***************/
+	#contact input{
+		margin: 5px 0;
+	}
 }
+/*************************************** *FOOTER* ***************/
+	.welcome-blurb #long-version{
+		display: none;
+	}
 @media (max-height: 500px){
 	#project #project-pic{
 		display: none;
@@ -318,6 +344,7 @@ form{
 	#project #project-info button{
 		margin: 10px 30px 20px 0;
 	}
+
 	footer{
 		padding: 10px;
 	}
