@@ -235,17 +235,20 @@ form{
 }
 @media (max-width: 500px){
 	body{
-		max-height: 100vh;
+		height: 100vh;
 	}
 	nav{
-		max-height: 30%;
+		height: 12%;
+		display: flex;
+		align-items: center;
 	}
 	main,
 	section{
-		max-height: 70%;
+		height: 88%;
 	}
-	image{
-		max-height: 100%;
+	image,
+	#mainPageImage{
+		height: 100%;
 	}
 	nav h1{
 		font-size: 1em;
@@ -279,9 +282,7 @@ form{
 		right: 5px;
 	}
 /*************************************** *MAIN* ***************/
-	#mainPageImage{
-		height: 100vh;
-	}
+
 /*************************************** *BIO* ***************/
 	#bio #bioImageSmall{
 		display: none;
@@ -295,6 +296,9 @@ form{
 		width: 90vw;
 	} 
 /*************************************** *PORTFOLIO* ***************/
+	#portfolio{
+		display: none;
+	}
 	#project{
 		flex-direction: column;
 	}
