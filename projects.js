@@ -2,14 +2,14 @@ const PROJECTS = 	[
 	{
 		name: 'Node Content Scraper', 
 		description: "Program visits the website http://shirts4mike.com and uses http://shirts4mike.com/shirts.php as single entry point to scrape information for 8 t-shirts from the site. Details for each t-shirt are gathered and saved to a CSV file include the t-shirt's Title, Price, ImageURL, URL as well as the time the information was gathered. The time is in Coordinated Universal Time. The CSV file is saved to a 'data' folder and named for the day it was gathered. If no data folder exists, one is created. The program uses the npm packages Fast-CSV to create the file and Cheerio which lets you use syntax similar to jQeury from within node to scrape the data. Built from scratch.", 
-		imageUrl: 'images/node-scraper.png',
+		imageUrl: 'images/node-scraper-min.png',
 		demoUrl: false,
 		codeUrl: 'https://github.com/aaltamirano1/node-content-scraper'
 	},
 	{
 		name: 'Nutrient Tracker', 
 		description: 'Lets users set goals to increase or cutback on nutrients and track daily performance ratings and notes. Notes are organized in journal by date/rating so users can track how these nutrients affect them when they preform well or poorly on their goals. Built from scratch with Rails, Bootstrap, jquery, a simple-calendar gem and devise gem for user-authentication.',
-		imageUrl: 'images/nutrient-tracker.png',
+		imageUrl: 'images/nutrient-tracker-min.png',
 		demoUrl: 'https://nutrient-tracker.herokuapp.com/',
 		codeUrl: 'https://github.com/aaltamirano1/Nutrient-Tracker'
 	},
@@ -30,14 +30,14 @@ const PROJECTS = 	[
 	{
 		name: 'Pagination and Content Filter', 
 		description:	'Used JavaScript and jQuery to dynamically divide the contents (a list of students) into pages and added a search function to list only the students that match that search. JavaScript file built from scratch. Search function and pagination links disabled if JavaScript is turned off; entire list of students is displayed.', 
-		imageUrl:	'images/pagination.png',
+		imageUrl:	'images/pagination-min.png',
 		demoUrl:	'https://aaltamirano1.github.io/pagination-content-filter/',
 		codeUrl:	'https://github.com/aaltamirano1/pagination-content-filter'
 	},
 	{
 		name: "Conway's Game of Life", 
 		description:	'The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. Built with JavaScript and jQuery.', 
-		imageUrl:	'images/conways.png',
+		imageUrl:	'images/conways-min.png',
 		demoUrl:	'https://aaltamirano1.github.io/conways-game-of-life/',
 		codeUrl:	'https://github.com/aaltamirano1/conways-game-of-life' 
 	}
