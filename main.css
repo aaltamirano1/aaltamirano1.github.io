@@ -247,7 +247,8 @@ form{
 		height: 88%;
 	}
 	image,
-	#mainPageImage{
+	#mainPageImage,
+	#bio .bio-text{
 		height: 100%;
 	}
 	nav h1{
