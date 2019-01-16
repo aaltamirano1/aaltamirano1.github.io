@@ -1,5 +1,12 @@
 const PROJECTS = 	[
 	{
+		name: 'Elected Officials Lookup', 
+		description: "Users enter their address and are given contact info for their elected officials using Google's Civic Info API. YouTube's API also provides video clips of the elected officials so citizens can learn about and contact their elected officials. Built from scratch from concept and wireframe to finished product.", 
+		imageUrl: 'images/elected-officials.png',
+		demoUrl: 'https://aaltamirano1.github.io/elected-officials-lookup/',
+		codeUrl: 'https://github.com/aaltamirano1/elected-officials-lookup'
+	},
+	{
 		name: 'Node Content Scraper', 
 		description: "Program visits the website http://shirts4mike.com and uses http://shirts4mike.com/shirts.php as single entry point to scrape information for 8 t-shirts from the site. Details for each t-shirt are gathered and saved to a CSV file include the t-shirt's Title, Price, ImageURL, URL as well as the time the information was gathered. The time is in Coordinated Universal Time. The CSV file is saved to a 'data' folder and named for the day it was gathered. If no data folder exists, one is created. The program uses the npm packages Fast-CSV to create the file and Cheerio which lets you use syntax similar to jQeury from within node to scrape the data. Built from scratch.", 
 		imageUrl: 'images/node-scraper-min.png',

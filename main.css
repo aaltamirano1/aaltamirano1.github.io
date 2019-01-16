@@ -147,9 +147,6 @@ footer .contact ul li:hover{
 	width: 60vw;
 	height: 100%;
 	box-shadow: 5px 10px 20px grey inset;
-
-	-webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(80%);
 }
 #project #project-info{
 	margin: 20px;

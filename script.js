@@ -33,7 +33,7 @@ function watchMouseover(){
 		if(projectIndex==0){
 			$(this).hide();
 		}
-		if(projectIndex==4){
+		if(projectIndex==5){
 			$(".right-arrow").show();
 		}
 	})
