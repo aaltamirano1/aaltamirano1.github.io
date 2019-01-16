@@ -10,24 +10,26 @@
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   </head>
   <body>
-  	<nav>
-  		<h1>Angel <strong>Altamirano</strong></h1>
-  		<ul>
-  			<li id="homeLink">Home</li>
-  			<li id="bioLink">Bio</li>
+    <nav>
+      <h1>Angel <strong>Altamirano</strong></h1>
+      <i class="fas fa-bars"></i>
+      <ul>
+        <li id="close"><i class="fas fa-times"></i></li>
+        <li id="homeLink">Home</li>
+        <li id="bioLink">Bio</li>
         <li id="portfolioLink">Portfolio</li>
-  			<li id="contactLink">Contact</li>
-  		</ul>
-  	</nav>
+        <li id="contactLink">Contact</li>
+      </ul>
+    </nav>
 
-  	<main>
-  		<img id="mainPageImage" src="https://66.media.tumblr.com/3a8d694ed516c225f815b81d3aaeaf67/tumblr_nxt9h8uWla1shpedgo1_540.gif">
-  	</main>
+    <main>
+      <img id="mainPageImage" src="https://66.media.tumblr.com/3a8d694ed516c225f815b81d3aaeaf67/tumblr_nxt9h8uWla1shpedgo1_540.gif">
+    </main>
 
-  	<section id="bio">
-  		<div class="bio-text">
+    <section id="bio">
+      <div class="bio-text">
         <h1>About Me</h1>
-  			<p>When I was five, my mother immigrated into this country with $25 to her name. She built her own catering business and everyone lent a hand to keep us afloat. I come from a world where we sleep little, leave class to go to work, and always watch out for heat strokes.</p>
+        <p>When I was five, my mother immigrated into this country with $25 to her name. She built her own catering business and everyone lent a hand to keep us afloat. I come from a world where we sleep little, leave class to go to work, and always watch out for heat strokes.</p>
 
         <p>I come from a very low-tech world. In 1999 my mother brought home our first computer after hearing someone was trying to get rid of it. It had a small black screen and green letters. I had fun making pictures on it using little square characters against the black background. Years later my brother got a computer for his birthday. It was a machine for MS Paint and some video games. A few years after that, it was stolen. Beyond that computers were always something used in school.</p>
 
@@ -36,23 +38,37 @@
         <p>Near the end of college I got a job at a company that builds rewards websites. I answer calls from people having issues with the site. On my breaks I took courses on Khan Academy. One day Intro to Programming popped up and they had me make a sun rise out of a green field. I could not believe that is what programming was.</p>
 
         <p>So here we are.</p>
-  		</div>
-  		<img src="https://imgur.com/c38d0Er.jpg">
+      </div>
+      <img src="https://imgur.com/c38d0Er.jpg">
       <img id="bioImageSmall" src="https://imgur.com/p33fLdG.jpg">
-  	</section>
+    </section>
 
     <section id="portfolio">
       <p class="arrow left-arrow"><i class="fas fa-chevron-circle-left"></i></p>
       <p class="arrow right-arrow"><i class="fas fa-chevron-circle-right"></i></p>
       <div id="project">
-        <image src="https://images.pexels.com/photos/394377/pexels-photo-394377.jpeg" style="width: 100vw;">
+        <image id="project-default-img" src="https://images.pexels.com/photos/394377/pexels-photo-394377.jpeg" style="width: 100vw;">
+      </div>
+    </section>
+
+    <section id="contact">
+      <div id="contact-form">
+        <h2>Let's work together</h2>
+        <p>Please feel free to get in touch.</p>
+        <p>You may also reach me at <strong>angel.g.altam@gmail.com</strong>.</p>
+        <form action="https://formspree.io/angel.g.altam@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="_replyto" placeholder="Email">
+          <textarea name="message" rows="4" placeholder="Message"></textarea>
+          <input type="submit" value="Send">
+        </form>
       </div>
     </section>
 
     <footer id="700px-screen">
       <div class="welcome-blurb">
         <h3>Welcome,</h3>
-        <p>Helpful advice, resources, or criticism always appreciated. If you're new to coding, feel free to shoot me a question. Very pleased to meet you.</p>
+        <p><span id="long-version">Helpful advice, resources, or criticism always appreciated. If you're new to coding, feel free to shoot me a question. </p>Very pleased to meet you.</p>
       </div>
       <div class="contact">
         <h4>Let's connect.</h4>
@@ -63,23 +79,8 @@
       </div>
     </footer>
 
-  	<section id="booking">
-
-  		<div id="contact-form">
-	  		<h2>Let's work together</h2>
-	  		<p>Please feel free to get in touch.</p>
-	  		<p>You may also reach me at <strong>angel.g.altam@gmail.com</strong>.</p>
-        <form action="https://formspree.io/angel.g.altam@gmail.com" method="POST">
-          <input type="text" name="name" placeholder="Name">
-          <input type="email" name="_replyto" placeholder="Email">
-          <textarea name="message" rows="4" placeholder="Message"></textarea>
-          <input type="submit" value="Send">
-        </form>
-			</div>
-  	</section>
-
-  	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="projects.js"></script>
-  	<script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
  </html>

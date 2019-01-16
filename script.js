@@ -1,7 +1,7 @@
 function watchContactLink(){
 	$("#contactLink").on('click', ()=>{
 		$("main, section").hide();
-		$("#booking, footer").css("display", "flex");
+		$("#contact, footer").css("display", "flex");
 	});
 }
 
@@ -79,7 +79,23 @@ function watchHomeLink(){
 	});
 }
 
+function watchCloseButton(){
+	$('#close').on('click', function(){
+		$("nav ul").hide();
+	});
+}
+
+function watchMenuButton(){
+	$(".fa-bars").on('click', function(){
+		$("nav ul").css('display', 'flex');
+		$('#close').show();
+		watchCloseButton();
+	});
+}
+
 function initialDisplay(){
+	watchMenuButton();
+
 	watchHomeLink();
 	watchBioLink();
 	watchPortfolioLink();
