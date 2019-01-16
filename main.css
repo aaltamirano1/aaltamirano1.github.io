@@ -10,7 +10,6 @@ a{
 	text-decoration: none;
 	color: white;
 }
-
 body{
 	max-height: 100vh;
 	overflow-y: hidden;
@@ -45,8 +44,9 @@ nav ul li{
 	padding: 0 10px
 }
 nav ul li:hover{
-	color: red;
+	color: #eeee00;
 	opacity: .8;
+	cursor: pointer;
 }
 
 /*********************************************** *MAIN* ***************/
@@ -64,6 +64,7 @@ footer{
 	padding: 25px 30px 40px 30px;
 	display: flex;
 	font-size: .9em;
+	z-index: 1;
 }
 footer h3,
 footer h4{
@@ -86,8 +87,8 @@ footer .contact ul li{
 	margin-right: 20px;
 	font-size: 1.5em;
 }
-footer .contact ul li:hover{
-	color: red;
+footer a:hover{
+	color: #eeee00;
 	opacity: .8;
 }
 
@@ -161,7 +162,7 @@ footer .contact ul li:hover{
 	font-family: arial;
 }
 #project #project-info button{
-	background-color: red;
+	background-color: #f7ca18;
 	color: white;
 	font-weight: bold;
 	padding: 8px 18px;
