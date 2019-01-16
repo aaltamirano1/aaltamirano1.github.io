@@ -12,7 +12,7 @@ let html = `
 	<div id="project-pic" style="background:url(${projects[i].imageUrl}); background-size:cover;"></div>
   <div id="project-info">
     <h2 id="project-name">${projects[i].name}</h2>
-    <p style="font-family: 'Open Sans', serif;margin-bottom: 9px;">${projects[i].description}</p>
+    <p style="font-family: 'Open Sans', serif; line-height: 25px;">${projects[i].description}</p>
     <button><a target="_blank" href="${projects[i].codeUrl}">View Code</a></button>
     ${demoLink}
   </div>`;
