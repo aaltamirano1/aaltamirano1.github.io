@@ -45,7 +45,7 @@ nav ul li{
 }
 nav ul li:hover{
 	color: #eeee00;
-	opacity: .8;
+	opacity: .9;
 	cursor: pointer;
 }
 
@@ -89,7 +89,7 @@ footer .contact ul li{
 }
 footer a:hover{
 	color: #eeee00;
-	opacity: .8;
+	opacity: .9;
 }
 
 /*********************************************** *BIO* ***************/
