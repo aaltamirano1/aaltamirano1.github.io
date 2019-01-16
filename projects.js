@@ -37,7 +37,7 @@ const PROJECTS = 	[
 	{
 		name: 'Pagination and Content Filter', 
 		description:	'Used JavaScript and jQuery to dynamically divide the contents (a list of students) into pages and added a search function to list only the students that match that search. JavaScript file built from scratch. Search function and pagination links disabled if JavaScript is turned off; entire list of students is displayed.', 
-		imageUrl:	'images/pagination-min.png',
+		imageUrl:	'images/pagination-min.PNG',
 		demoUrl:	'https://aaltamirano1.github.io/pagination-content-filter/',
 		codeUrl:	'https://github.com/aaltamirano1/pagination-content-filter'
 	},
