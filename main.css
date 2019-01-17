@@ -21,7 +21,7 @@ li{
 	list-style: none;
 }
 
-/*********************************************** *NAV* ***************/
+/*********************************************** *NAV small screens* ***************/
 nav{
   width:100vw;
 	display: flex;
@@ -55,12 +55,12 @@ nav ul li:hover{
 	cursor: pointer;
 }
 
-/*********************************************** *MAIN* ***************/
+/*********************************************** *MAIN small screens* ***************/
 main img{
 	width: 100vw;
 }
 
-/*********************************************** *FOOTER* ***************/
+/*********************************************** *FOOTER small screens* ***************/
 footer{
 	position: fixed;
   bottom:0;
@@ -98,7 +98,7 @@ footer a:hover{
 	opacity: .9;
 }
 
-/*********************************************** *BIO* ***************/
+/*********************************************** *BIO * ***************/
 #bio,
 #bio #bioImageSmall{
 	display: none;
@@ -116,7 +116,7 @@ footer a:hover{
 	margin-bottom: 40px;
 	line-height: 25px
 }
-/*********************************************** *PORTFOLIO* ***************/
+/*********************************************** *PORTFOLIO * ***************/
 #portfolio .arrow{
 	font-size: 4em;
 	color: black;
@@ -175,7 +175,7 @@ footer a:hover{
 }
 
 
-/*********************************************** *CONTACT* ***************/
+/*********************************************** *CONTACT * ***************/
 #contact{
 	display: none;
 	height: 100vh;
@@ -217,8 +217,11 @@ form{
 		flex-direction: column;
 }
 
-
-
+@media(min-height: 700px){
+	footer#ignore-js{
+		display: initial; 
+	}
+}
 @media(max-width: 1000px){
 	#bio img{
 		display: none;
@@ -256,7 +259,7 @@ form{
 	nav h1{
 		font-size: 1em;
 	}
-/*************************************** *NAV* ***************/
+/*************************** *NAV small screens* ***************/
 	nav .fa-bars{
 		display: initial;
 	}
@@ -284,9 +287,7 @@ form{
 		top: 10px;
 		right: 5px;
 	}
-/*************************************** *MAIN* ***************/
-
-/*************************************** *BIO* ***************/
+/*************************** *BIO small screens* ***************/
 	#bio #bioImageSmall{
 		display: none;
 	}
@@ -298,7 +299,7 @@ form{
 		margin: 15px 0;
 		width: 90vw;
 	} 
-/*************************************** *PORTFOLIO* ***************/
+/*************************** *PORTFOLIO small screens* ***************/
 	#portfolio{
 		display: none;
 	}
@@ -329,12 +330,12 @@ form{
 	#project #project-info button{
 		margin: 10px 0 20px 0;
 	}
-/*************************************** *CONTACT* ***************/
+/*************************** *CONTACT small screens* ***************/
 	#contact input{
 		margin: 5px 0;
 	}
 }
-/*************************************** *FOOTER* ***************/
+/*************************** *FOOTER small screens* ***************/
 	.welcome-blurb #long-version{
 		display: none;
 	}
