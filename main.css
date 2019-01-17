@@ -21,7 +21,7 @@ li{
 	list-style: none;
 }
 
-/*********************************************** *NAV small screens* ***************/
+/*********************************************** *NAV* ***************/
 nav{
   width:100vw;
 	display: flex;
@@ -55,12 +55,12 @@ nav ul li:hover{
 	cursor: pointer;
 }
 
-/*********************************************** *MAIN small screens* ***************/
+/*********************************************** *MAIN* ***************/
 main img{
 	width: 100vw;
 }
 
-/*********************************************** *FOOTER small screens* ***************/
+/*********************************************** *FOOTER* ***************/
 footer{
 	position: fixed;
   bottom:0;
@@ -81,6 +81,9 @@ footer a{
 }
 footer .welcome-blurb{
 	width: 40%;
+}
+.welcome-blurb #long-version{
+	display: initial;
 }
 footer .contact{
 	margin-left: 20%;
