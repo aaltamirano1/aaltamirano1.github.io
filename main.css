@@ -217,7 +217,7 @@ form{
 		flex-direction: column;
 }
 
-@media(min-height: 700px){
+@media(min-height: 820px){
 	footer#ignore-js{
 		display: flex !important; 
 	}
