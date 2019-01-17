@@ -219,7 +219,7 @@ form{
 
 @media(min-height: 700px){
 	footer#ignore-js{
-		display: initial; 
+		display: flex !important; 
 	}
 }
 @media(max-width: 1000px){
