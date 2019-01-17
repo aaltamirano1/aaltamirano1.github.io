@@ -221,6 +221,9 @@ form{
 	footer#ignore-js{
 		display: flex !important; 
 	}
+	#bio #bio-text{
+		overflow-x: initial;
+	}
 }
 @media(max-width: 1000px){
 	#bio img{
