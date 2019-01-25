@@ -199,6 +199,7 @@ footer a:hover{
 #contact p,
 #contact strong{
 	font-family: serif;
+	text-align: center;
 }
 #contact input{
 	height: 30px;
@@ -337,6 +338,9 @@ form{
 		margin: 10px 0 20px 0;
 	}
 /*************************** *CONTACT small screens* ***************/
+	#contact h2{
+		font-size: 1.2em;
+	}
 	#contact input{
 		margin: 5px 0;
 	}
