@@ -298,7 +298,8 @@ form{
 		display: none;
 	}
 	#bio .bio-text{
-		height: 80vh;
+		margin: 15px;
+		height: 70vh;
 		width: 100vw;
 	}
 	#bio .bio-text p{
