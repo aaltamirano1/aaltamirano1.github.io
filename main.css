@@ -303,7 +303,7 @@ form{
 	}
 	#bio .bio-text p{
 		margin: 15px 0;
-		width: 90vw;
+		width: 100%;
 	} 
 /*************************** *PORTFOLIO small screens* ***************/
 	#portfolio{
