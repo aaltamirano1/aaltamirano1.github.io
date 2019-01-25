@@ -313,6 +313,9 @@ form{
 	#project{
 		flex-direction: column;
 	}
+	#project h2#project-name {
+		font-size: 1.2em;
+	}
 	#project #project-default-img{
 		height: 80vh;
 	}
