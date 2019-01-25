@@ -333,7 +333,7 @@ form{
 	#project #project-info{
 		width: 90vw;
 		margin: 5px auto;
-		height: 56vh;
+		height: 65%;
 		overflow-x: scroll;
 	}
 	#project #project-info button{
