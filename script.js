@@ -19,7 +19,7 @@ function watchLightBox(){
 				break;
 		}
 		$(".lightbox").css({display: "flex"});
-		$(".lightbox img").fadeIn("slow");
+		$(".lightbox img").fadeIn(800);
 		$("body").css({overflow: "hidden"});
 		watchCloseButton();
 	});
