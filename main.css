@@ -112,13 +112,32 @@ nav ul a{
   font-size: 1em;
   cursor: pointer;
 }
+/*////////////////////////////////////////////////////////////////// END ///*/
+#end{
+  display: flex;
+  width: 100vw;
+}
+#bio{
+  box-sizing: border-box;
+  width: 50vw;
+  padding: 40px;
+  background-color: #2ed573;
+  border-bottom: 40px solid #ff6348;
+  color: white;
+}
+#bio h2{
+  margin-bottom: 15px;
+}
+#bio p{
+  margin-bottom: 10px;
+}
+
 /*////////////////////////////////////////////////////////////////// CONTACT ///*/
 #contact{
   box-sizing: border-box;
-  height: 90vh;
+  width: 50vw;
   padding-top: 80px;
   color: #2f3542;
-  border-top: 60px solid #2ed573;
   border-bottom: 40px solid #ff6348;
   display: flex;
 	flex-direction: column;
@@ -187,7 +206,10 @@ nav ul a{
   }
   #contact{
     height: auto;
-  }
+  }  
+  #contact p{
+    text-align: center;
+  }  
 }
 @media screen and (max-width: 600px){
   nav{
@@ -203,10 +225,15 @@ nav ul a{
   #about{
     height: auto;
   }
+  #end{
+    flex-direction: column;
+  }
+  #bio{
+    width: 100vw;
+    border: none;
+  }
   #contact{  	
     height: 100vh;
+    width: 100vw;
   }
-  #contact p{
-    text-align: center;
-  }  
 }
