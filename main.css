@@ -1,365 +1,207 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: arial;
-	box-sizing: border-box;
+*{  
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  list-style: none;
 }
-
-a{
-	text-decoration: none;
-	color: white;
+ul{
+  padding: 0;
 }
-body{
-	max-height: 100vh;
-	overflow-y: hidden;
-	max-width: 100vw;
-	overflow-x: hidden;
-}
-
-li{
-	list-style: none;
-}
-
-/*********************************************** *NAV small screens* ***************/
+/*////////////////////////////////////////////////////////////////// NAV ///*/
 nav{
-  width:100vw;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #2f3542;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed;
+}
+nav ul{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul a{
+  color: white;
+  text-decoration: none;
+}
+/*////////////////////////////////////////////////////////////////// ABOUT ///*/
+#about{
+	box-sizing: border-box;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
-	background-color: black;
-	color: white;
-	padding: 25px 30px;
-	text-transform: uppercase;
+  height: 40vh;
+  padding: 60px 40px 40px 40px;
+  background-color: #ff6348;
+  color: white;
 }
-nav h1{
-	letter-spacing: 2px;
-	font-weight: normal;
+#about h1{
+  margin-bottom: 15px;
 }
-nav .fa-bars{
-	display: none;
+#about h4{
+  margin: 40px 0 10px 0;
 }
-nav ul {
-	display: flex;
+#about ul{
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3em;
+}
+#about ul a{
+  color: white;
+}
+/*////////////////////////////////////////////////////////////////// PORTFOLIO ///*/
+#portfolio{
+  box-sizing: border-box;
+  height: 80vh;
+  padding: 60px 40px 0 40px;
+  background-color: #1e90ff;
+  color: white;
+}
+#portfolio h1{
+  margin-bottom: 20px;
+}
+#portfolio #project-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#portfolio #project-list .project{
+  width: 300px;
+  heigth: 400px;
+  padding: 20px 10px;
+  color: #1e90ff;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#portfolio .project i{
+  font-size: 2.5em;
+  margin: 20px;
+}
+#portfolio .project h2{
+  text-align: center;
+}
+#portfolio .project p{
+  margin: 15px 10px;
+  color: #747d8c;
+}
+#portfolio #project-list .button-box{
+  width: 200px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.button-box a,
+.button-box a:visited,
+.button-box button.project-screenshot{
+  border: none;
+  padding: 8px 12px;
+  background-color: #1e90ff;
+  color: white;
+  text-decoration: none;
+}
+.button-box button.project-screenshot{
+  min-width: 58px;
+  font-size: 1em;
+  cursor: pointer;
+}
+/*////////////////////////////////////////////////////////////////// CONTACT ///*/
+#contact{
+  box-sizing: border-box;
+  height: 80vh;
+  padding-top: 80px;
+  color: #2f3542;
+  border-bottom: 40px solid #ff6348;
+  display: flex;
+	flex-direction: column;
 	align-items: center;
 }
-	nav ul #close{
-		display: none;
-	}
-nav ul li{
-	letter-spacing: 2px;
-	padding: 0 10px
-}
-nav ul li:hover{
-	color: #eeee00;
-	opacity: .9;
-	cursor: pointer;
-}
-
-/*********************************************** *MAIN small screens* ***************/
-main img{
-	width: 100vw;
-}
-
-/*********************************************** *FOOTER small screens* ***************/
-footer{
-	position: fixed;
-  bottom:0;
-  width:100%;
-	background-color: black;
-	color: white;
-	padding: 25px 30px 40px 30px;
-	display: flex;
-	font-size: .9em;
-	z-index: 1;
-}
-footer h3,
-footer h4{
-	margin-bottom: 10px; 
-}
-footer a{
-	color: white;
-}
-footer .welcome-blurb{
-	width: 40%;
-}
-footer .contact{
-	margin-left: 20%;
-}
-footer .contact ul{
-	display: flex;
-	justify-content: sp
-}
-footer .contact ul li{
-	margin-right: 20px;
-	font-size: 1.5em;
-}
-footer a:hover{
-	color: #eeee00;
-	opacity: .9;
-}
-
-/*********************************************** *BIO * ***************/
-#bio,
-#bio #bioImageSmall{
-	display: none;
-}
-#bio .bio-text{
-	margin: 30px 5px 30px 40px;
-	min-width: 60vw;
-	height: 80vh;
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
-#bio .bio-text p{
-	width: 55vw;
-	margin-top: 20px;
-	margin-bottom: 40px;
-	line-height: 25px
-}
-/*********************************************** *PORTFOLIO * ***************/
-#portfolio .arrow{
-	font-size: 4em;
-	color: black;
-	padding: 20px;
-  position: absolute;
-  top: 45vh;
-  z-index: 2;
-  opacity: .8;
-  display: none;
-}
-.arrow:hover{
-	cursor: pointer;
-}
-.left-arrow{
-	left: 10px;
-}
- .right-arrow{
-	right: 10px;
-}
-#portfolio{
-	background-color: black;
-}
-#project{
-	display: flex;
-	flex-direction: row;
-	height: 100vh;
-	width: 100vw;
-	background-color: white;
-}
-#project #project-pic{
-	width: 60vw;
-	height: 100%;
-	box-shadow: 5px 10px 20px grey inset;
-}
-#project #project-info{
-	margin: 20px;
-	width: 40vw;
-}
-#project h2#project-name{
-	margin: 10px 0;
-	font-family: 'Merriweather', serif;
-}
-#project #project-info p{
-	margin-bottom: 10px;
-	font-family: arial;
-}
-#project #project-info button{
-	background-color: #f7ca18;
-	color: white;
-	font-weight: bold;
-	padding: 8px 18px;
-	margin: 30px 30px 0 0;
-	border: none;
-	border-radius: 15px;
-	box-shadow: 5px 5px 20px #888;
-}
-
-
-/*********************************************** *CONTACT * ***************/
-#contact{
-	display: none;
-	height: 100vh;
-	opacity: .9;
-}
-#contact #contact-form{
-	border-radius: 3px;
+#contact form{
+	max-width: 100%;
 	padding: 30px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 100%;
-}
-#contact h2{
-	text-transform: uppercase;
-}
-#contact p,
-#contact strong{
-	font-family: serif;
-}
-#contact input{
-	height: 30px;
-	border: 1px solid grey;
-}
-#contact textarea{
-	
 }
 #contact input,
 #contact textarea{
-	margin: 20px 0; 
-	border-radius: 5px;
-	padding: 7px;
-	width: 320px;
+  width: 200px; 
+  margin: 10px; 
+  padding: 10px;
 }
-form{
-		margin-top: 15px;
-		display: flex;
-		flex-direction: column;
+#contact input[type="submit"]{
+  width: 220px;
+  border: none;
+  background-color: #ffa502;
+  font-weight: bold;
+  cursor: pointer;
 }
-
-@media(min-height: 700px){
-	footer#ignore-js{
-		display: initial; 
-	}
+/*////////////////////////////////////////////////////////////////// LIGHT BOX ///*/
+.lightbox{
+	width: 100vw;
+	height: 100%;
+	padding-top: 10px;
+	display: none;
+	background-color: rgba(0,0,0,.7);
+	position: fixed;
+	top: 0;
+	left: 0;
 }
-@media(max-width: 1000px){
-	#bio img{
-		display: none;
-	}
-	#bio #bioImageSmall{
-		display: initial;
-		height: 100vh;
-	}
-	#bio .bio-text{
-		height: 90vh;
-		width: 100vw;
-		margin: 25px;
-	} 
+.lightbox img{
+	margin: auto;
+	box-shadow: 0 4px 13px 0 black;
+	border-radius: 3px;
 }
-@media (max-width: 500px){
-	body{
-		height: 100vh;
-	}
-	nav{
-		height: 12%;
-		display: flex;
-		align-items: center;
-	}
-	main,
-	#bio,
-	#portfolio,
-	#contact{
-		height: 88%;
-	}
-	image,
-	#mainPageImage,
-	#bio .bio-text{
-		height: 100%;
-	}
-	nav h1{
-		font-size: 1em;
-	}
-/*************************** *NAV small screens* ***************/
-	nav .fa-bars{
-		display: initial;
-	}
-	.fa-bars,
-	#close{
-		font-size: 1.5em;
-	}
-	nav ul{
-		display: none;
-		flex-direction: column;
-		justify-content: space-around;
-		position: fixed;
-		top: 3px;
-		right: 3px;
-		z-index: 1;
-		height: 200px;
-		border: solid white;
-		border-width: 3px 1px;
-		border-radius: 5px;
-		padding: 7px;
-		background-color: black;
-	}
-	nav ul #close{
-		position: fixed;
-		top: 10px;
-		right: 5px;
-	}
-/*************************** *BIO small screens* ***************/
-	#bio #bioImageSmall{
-		display: none;
-	}
-	#bio .bio-text{
-		height: 80vh;
-		width: 100vw;
-	}
-	#bio .bio-text p{
-		margin: 15px 0;
-		width: 90vw;
-	} 
-/*************************** *PORTFOLIO small screens* ***************/
-	#portfolio{
-		display: none;
-	}
-	#project{
-		flex-direction: column;
-	}
-	#project #project-default-img{
-		height: 80vh;
-	}
-	#portfolio .arrow{
-		font-size: 3em;
-		padding: 5px;
-		opacity: .4;
-		margin-top: 20px;
-	}
-	#project #project-pic{
-		width: 100vw;
-		height: 10px;
-		opacity: 0;
-	}
-	#project #project-info{
-		width: 90vw;
-		margin: 5px auto;
-		margin-bottom: 60px;
-		height: 56vh;
-		overflow-x: scroll;
-	}
-	#project #project-info button{
-		margin: 10px 0 20px 0;
-	}
-/*************************** *CONTACT small screens* ***************/
-	#contact input{
-		margin: 5px 0;
-	}
+.close{	
+	margin: 10px;
+	position: absolute;
+	top:30px;
+	right: 70px;
+	font-weight: bold;
+	font-size: 2em;
+	cursor: pointer;
+  color: white;
 }
-/*************************** *FOOTER small screens* ***************/
-	.welcome-blurb #long-version{
-		display: none;
-	}
-@media (max-height: 500px){
-	#project #project-pic{
-		display: none;
-	}
-	#project #project-info{
-		width: 100%;
-		height: 60vh;
-		margin: 5px 5px 0 10px;
-		overflow-x: scroll;
-	}
-	#project #project-info button{
-		margin: 10px 30px 20px 0;
-	}
-
-	footer{
-		padding: 10px;
-	}
-	footer .welcome-blurb{
-		display: none;
-	}
-	footer .contact{
-		margin: 0 20px;
-	}
+/*////////////////////////////////////////////////////////////////// MEDIA QUERIES ///*/
+@media screen and (max-width: 800px){
+  #portfolio{
+    height: auto;
+    padding-bottom: 80px;
+  }
+  #portfolio #project-list .project{
+    width: auto;
+    margin: 15px 0;
+  }
+  .lightbox img{
+  	max-width: 100%;
+  }
+  #contact{
+    height: auto;
+  }
+}
+@media screen and (max-width: 600px){
+  nav{
+    justify-content: center;
+  }
+  nav ul{
+    margin-top: 7px;
+  }
+  #about,
+  #portfolio{
+    padding: 80px 20px 40px 20px;
+  }
+  #about{
+    height: auto;
+  }
+  #contact p{
+    text-align: center;
+  }  
 }

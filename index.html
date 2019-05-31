@@ -1,86 +1,90 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angel Altamirano</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Angel Altamirano</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="nav" data-offset="50">
     <nav>
-      <h1>Angel <strong>Altamirano</strong></h1>
-      <i class="fas fa-bars"></i>
+      <h3>Angel Altamirano</h3>
       <ul>
-        <li id="close"><i class="fas fa-times"></i></li>
-        <li id="homeLink">Home</li>
-        <li id="bioLink">Bio</li>
-        <li id="portfolioLink">Portfolio</li>
-        <li id="contactLink">Contact</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
-    <main>
-      <img id="mainPageImage" src="https://66.media.tumblr.com/3a8d694ed516c225f815b81d3aaeaf67/tumblr_nxt9h8uWla1shpedgo1_540.gif">
-    </main>
-
-    <section id="bio">
-      <div class="bio-text">
-        <h1>About Me</h1>
-        <p>When I was five, my mother immigrated into this country with $25 to her name. She built her own catering business and everyone lent a hand to keep us afloat. I come from a world where we sleep little, leave class to go to work, and always watch out for heat strokes.</p>
-
-        <p>I come from a very low-tech world. In 1999 my mother brought home our first computer after hearing someone was trying to get rid of it. It had a small black screen and green letters. I had fun making pictures on it using little square characters against the black background. Years later my brother got a computer for his birthday. It was a machine for MS Paint and some video games. A few years after that, it was stolen. Beyond that computers were always something used in school.</p>
-
-        <p>When I was 18 I was working enough to save up for a smartphone and laptop for college. I entered bottle-cap codes for Coke Rewards to get a Wired Magazine subscription to read on the train rides and bus rides to and from class. I loved reading about people slowly building a science fiction world, but never considered this was a field I could work in. I never met anyone who worked in tech.</p>
-
-        <p>Near the end of college I got a job at a company that builds rewards websites. I answer calls from people having issues with the site. On my breaks I took courses on Khan Academy. One day Intro to Programming popped up and they had me make a sun rise out of a green field. I could not believe that is what programming was.</p>
-
-        <p>So here we are.</p>
-      </div>
-      <img src="https://imgur.com/c38d0Er.jpg">
-      <img id="bioImageSmall" src="https://imgur.com/p33fLdG.jpg">
+    
+    <section id="about">
+      <h1>About</h1>
+      <p>I am a Full-Stack Javascript Developer based in Atlanta. I build apps I would like to use. Pleased to meet you.</p>
+      <section id="connect">
+        <h4>Let's connect.</h4>
+        <ul>
+          <a target="_blank" href="https://www.linkedin.com/in/angel-altamirano/"><li><i class="fab fa-linkedin"></i></li></a>
+          <a target="_blank" href="https://github.com/aaltamirano1"><li><i class="fab fa-github"></i></li></a>
+          <a target="_blank" href="mailto:angel.g.altam@gmail.com"><li><i class="fas fa-envelope-square"></i></li></a>
+        </ul> 
+      </section>     
     </section>
-
+    
     <section id="portfolio">
-      <p class="arrow left-arrow"><i class="fas fa-chevron-circle-left"></i></p>
-      <p class="arrow right-arrow"><i class="fas fa-chevron-circle-right"></i></p>
-      <div id="project">
-        <image id="project-default-img" src="https://images.pexels.com/photos/394377/pexels-photo-394377.jpeg" style="width: 100vw;">
-      </div>
+      <h1>Portfolio</h1>
+      <section id="project-list">
+        <div class="project">
+          <i class="fas fa-dumbbell"></i>
+          <h2>5/3/1 Progression Tracker</h2>
+          <p>For weight-lifters running a 5/3/1 progression on a lift or following a 5/3/1 program. A 4 week training schedule is created based on the 5/3/1 method created by Jim Wendler. Users can keep notes and reminders for a given exercise.</p>
+          <div class="button-box">
+            <a target="_blank" href="https://the-531-progression-tracker.herokuapp.com/">demo</a>
+            <a target="_blank" href="https://github.com/aaltamirano1/531-progression-tracker">code</a>
+            <button class="project-screenshot" data-index="1">pics</button>
+          </div>
+        </div>
+        <div class="project">
+          <i class="fas fa-pencil-alt"></i>
+          <h2>Learner's Journal</h2>
+          <p>For anyone trying to learn a new skill or improve. For each journal entry users provide the date, what they are currently working on, how they feel about it, and what they look forward to doing. It is meant to track progress.</p>
+          <div class="button-box">
+            <a target="_blank" href="https://learners-journal.herokuapp.com/">demo</a>
+            <a target="_blank" href="https://github.com/aaltamirano1/learners-journal">code</a>
+            <button class="project-screenshot" data-index="2">pics</button>
+          </div>
+        </div>
+        <div class="project">
+          <i class="fas fa-flag-usa"></i>
+          <h2>Elected Officials Lookup</h2>
+          <p>Users enter their address and are given contact info for their elected officials. Video clips of the elected officials are available so citizens can learn about and contact their elected officials.</p>
+          <div class="button-box">
+            <a target="_blank" href="https://aaltamirano1.github.io/elected-officials-lookup/">demo</a>
+            <a target="_blank" href="https://github.com/aaltamirano1/elected-officials-lookup">code</a>
+            <button class="project-screenshot" data-index="3">pics</button>
+          </div>
+        </div>
+      </section>
     </section>
-
+    
+    <div class="lightbox">
+       <p class="close"><i class="fas fa-times"></i></p>
+      <img id="screenshot-one" src="https://i.imgur.com/XOETIZ3.png" alt="Project Screenshot" />
+    </div>
+    
     <section id="contact">
-      <div id="contact-form">
         <h2>Let's work together</h2>
-        <p>Please feel free to get in touch.</p>
-        <p>You may also reach me at <strong>angel.g.altam@gmail.com</strong>.</p>
+        <p>Feel free to get in touch.</p>
+      <p>You may also reach me at <strong>angel.g.altam@gmail.com</strong>.</p>
         <form action="https://formspree.io/angel.g.altam@gmail.com" method="POST">
           <input type="text" name="name" placeholder="Name">
           <input type="email" name="_replyto" placeholder="Email">
           <textarea name="message" rows="4" placeholder="Message"></textarea>
           <input type="submit" value="Send">
         </form>
-      </div>
     </section>
 
-    <footer id="ignore-js">
-      <div class="welcome-blurb">
-        <h3>Welcome,</h3>
-        <p><span id="long-version">Helpful advice, resources, or criticism always appreciated. If you're new to coding, feel free to shoot me a question. </p>Very pleased to meet you.</p>
-      </div>
-      <div class="contact">
-        <h4>Let's connect.</h4>
-         <ul>
-          <a target="_blank" href="https://www.linkedin.com/in/angel-altamirano/"><li><i class="fab fa-linkedin"></i></li></a>
-          <a target="_blank" href="https://github.com/aaltamirano1"><li><i class="fab fa-github"></i></li></a>
-        </ul>
-      </div>
-    </footer>
-
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="projects.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
- </html>
+</html>
