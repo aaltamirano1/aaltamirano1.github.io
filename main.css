@@ -115,9 +115,10 @@ nav ul a{
 /*////////////////////////////////////////////////////////////////// CONTACT ///*/
 #contact{
   box-sizing: border-box;
-  height: 80vh;
+  height: 90vh;
   padding-top: 80px;
   color: #2f3542;
+  border-top: 60px solid #2ed573;
   border-bottom: 40px solid #ff6348;
   display: flex;
 	flex-direction: column;
