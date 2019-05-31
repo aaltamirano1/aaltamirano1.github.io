@@ -140,8 +140,9 @@ nav ul a{
 #contact input[type="submit"]{
   width: 220px;
   border: none;
-  background-color: #ffa502;
-  font-weight: bold;
+  background-color: #2ed573;
+  color: white;
+  font-size: 1em;
   cursor: pointer;
 }
 /*////////////////////////////////////////////////////////////////// LIGHT BOX ///*/
