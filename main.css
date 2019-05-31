@@ -227,6 +227,9 @@ nav ul a{
   #about{
     height: auto;
   }
+  .lightbox img{
+    margin-top: 40%;	
+  }
   #end{
     flex-direction: column;
   }
