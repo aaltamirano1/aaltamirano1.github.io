@@ -203,6 +203,9 @@ nav ul a{
   #about{
     height: auto;
   }
+  #contact{  	
+    height: 100vh;
+  }
   #contact p{
     text-align: center;
   }  
