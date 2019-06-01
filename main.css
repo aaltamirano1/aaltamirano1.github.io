@@ -92,6 +92,7 @@ nav ul a{
   margin-bottom: 20px;
   border-bottom: 10px solid #0abde3;
   border-radius: 5px;
+  box-shadow: inset 345px 5px 15px 0px rgba(50,50 , 50,0.31);
 }
 #portfolio #project-list .project-info-card{
   width: 300px;
@@ -100,6 +101,7 @@ nav ul a{
   padding: 30px 15px;
   color: #0abde3;
   background-color: white;
+
   border-radius: 5px 0 0 5px;
   display: flex;
   flex-direction: column;
