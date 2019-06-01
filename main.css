@@ -86,15 +86,11 @@ nav ul a{
 #portfolio h1{
   margin-bottom: 30px;
 }
-.project-img-bg{
+.project{
   width: 100%;
   background-position: top right;
   margin-bottom: 20px;
   border-bottom: 10px solid #0abde3;
-  border-radius: 5px;
-}
-#portfolio #project-list .project{
-  background: linear-gradient(270deg, transparent 50%, #0abde3 100%);
   border-radius: 5px;
 }
 #portfolio #project-list .project-info-card{
