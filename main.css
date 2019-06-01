@@ -3,6 +3,9 @@
   font-family: 'Lato', sans-serif;
   list-style: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 ul{
   padding: 0;
 }
@@ -28,14 +31,19 @@ nav ul a{
   text-decoration: none;
 }
 /*////////////////////////////////////////////////////////////////// ABOUT ///*/
+#about-img-bg{
+  background: url('images/cs-bg.jpg');
+  background-position: top right;  
+  height: 40vh;
+}
 #about{
 	box-sizing: border-box;
 	display: flex;
+  height: 100%;
 	flex-direction: column;
 	justify-content: space-between;
-  height: 40vh;
   padding: 60px 40px 40px 40px;
-  background-color: #ff6348;
+  background: linear-gradient(270deg, transparent 0, #ff6b6b 40%);
   color: white;
 }
 #about h1{
@@ -53,46 +61,68 @@ nav ul a{
 #about ul a{
   color: white;
 }
+/*////////////////////////////////////////////////////////////////// SKILLS ///*/
+#skills{
+  background-color: #badc58;
+  color: white;
+  padding: 40px;
+}
+#skills ul{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#skills ul li{
+  margin: 10px 0;
+}
 /*////////////////////////////////////////////////////////////////// PORTFOLIO ///*/
 #portfolio{
   box-sizing: border-box;
-  height: 80vh;
-  padding: 60px 40px 0 40px;
-  background-color: #1e90ff;
+  padding: 60px 40px 40px 40px;
+  background-color: #48dbfb;
   color: white;
 }
 #portfolio h1{
   margin-bottom: 20px;
 }
-#portfolio #project-list{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.project-img-bg{
+  width: 100%;
+  background-position: top right;
+  margin-bottom: 20px;
+  border-bottom: 10px solid #0abde3;
+  border-radius: 5px;
 }
 #portfolio #project-list .project{
+  background: linear-gradient(270deg, transparent 50%, #0abde3 100%);
+  border-radius: 5px;
+}
+#portfolio #project-list .project-info-card{
   width: 300px;
-  heigth: 400px;
+  min-height: 350px;
+  height: 100%;
   padding: 20px 10px;
-  color: #1e90ff;
+  color: #0abde3;
   background-color: white;
+  border-radius: 5px 0 0 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-#portfolio .project i{
+#portfolio .project-info-card i{
   font-size: 2.5em;
   margin: 20px;
 }
-#portfolio .project h2{
+#portfolio .project-info-card h2{
   text-align: center;
 }
-#portfolio .project p{
+#portfolio .project-info-card p{
   margin: 15px 10px;
   color: #747d8c;
 }
 #portfolio #project-list .button-box{
-  width: 200px;
+  width: 150px;
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -103,14 +133,12 @@ nav ul a{
 .button-box button.project-screenshot{
   border: none;
   padding: 8px 12px;
-  background-color: #1e90ff;
+  background-color: #48dbfb;
   color: white;
   text-decoration: none;
 }
 .button-box button.project-screenshot{
-  min-width: 58px;
-  font-size: 1em;
-  cursor: pointer;
+  display: none;
 }
 /*////////////////////////////////////////////////////////////////// END ///*/
 #end{
@@ -122,8 +150,8 @@ nav ul a{
   box-sizing: border-box;
   width: 50vw;
   padding: 40px;
-  background-color: #2ed573;
-  border-bottom: 40px solid #ff6348;
+  background-color: #feca57;
+  border-bottom: 40px solid #ff6b6b;
   color: white;
 }
 #bio h2{
@@ -139,7 +167,7 @@ nav ul a{
   width: 50vw;
   padding-top: 80px;
   color: #2f3542;
-  border-bottom: 40px solid #ff6348;
+  border-bottom: 40px solid #ff6b6b;
   display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -161,7 +189,7 @@ nav ul a{
 #contact input[type="submit"]{
   width: 220px;
   border: none;
-  background-color: #2ed573;
+  background-color: #feca57;
   color: white;
   font-size: 1em;
   cursor: pointer;
@@ -194,13 +222,25 @@ nav ul a{
 }
 /*////////////////////////////////////////////////////////////////// MEDIA QUERIES ///*/
 @media screen and (max-width: 800px){
+  #about-img-bg{
+    min-height: 40vh;
+    height: auto;
+  }
   #portfolio{
     height: auto;
     padding-bottom: 80px;
   }
   #portfolio #project-list .project{
     width: auto;
-    margin: 15px 0;
+  }
+  #portfolio #project-list .button-box{
+  width: 200px;
+  }
+  .button-box button.project-screenshot{
+    display: initial;
+    min-width: 58px;
+    font-size: 1em;
+    cursor: pointer;
   }
   .lightbox img{
   	max-width: 100%;
@@ -224,8 +264,9 @@ nav ul a{
   #portfolio{
     padding: 80px 20px 40px 20px;
   }
-  #about{
-    height: auto;
+  #portfolio #project-list .project-info-card{
+    box-sizing: border-box;
+    width: 100%;
   }
   .lightbox img{
     margin-top: 40%;	
