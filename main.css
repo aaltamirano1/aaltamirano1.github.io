@@ -101,7 +101,7 @@ nav ul a{
   width: 300px;
   min-height: 350px;
   height: 100%;
-  padding: 20px 10px;
+  padding: 30px 15px;
   color: #0abde3;
   background-color: white;
   border-radius: 5px 0 0 5px;
@@ -122,7 +122,7 @@ nav ul a{
   color: #747d8c;
 }
 #portfolio #project-list .button-box{
-  width: 150px;
+  width: 200px;
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -132,8 +132,8 @@ nav ul a{
 .button-box a:visited,
 .button-box button.project-screenshot{
   border: none;
-  padding: 8px 12px;
-  background-color: #48dbfb;
+  padding: 10px 20px;
+  background-color: #0abde3;
   color: white;
   text-decoration: none;
 }
@@ -223,9 +223,8 @@ nav ul a{
 }
 /*////////////////////////////////////////////////////////////////// MEDIA QUERIES ///*/
 @media screen and (max-width: 800px){
-  #about-img-bg{
-    min-height: 40vh;
-    height: auto;
+  #skills ul li{
+    margin: 10px 10px 10px 0;
   }
   #portfolio{
     height: auto;
@@ -234,8 +233,10 @@ nav ul a{
   #portfolio #project-list .project{
     width: auto;
   }
-  #portfolio #project-list .button-box{
-  width: 200px;
+  .button-box a,
+  .button-box a:visited,
+  .button-box button.project-screenshot{
+    padding: 8px 12px; 
   }
   .button-box button.project-screenshot{
     display: initial;
@@ -260,6 +261,21 @@ nav ul a{
   }
   nav ul{
     margin-top: 7px;
+  }
+  #about-img-bg{
+    min-height: 40vh;
+    height: auto;
+        background-position: left;
+  }
+  #about{
+    background: linear-gradient(270deg, transparent 0, #ff6b6b 30%);
+  }
+  #about p{
+    line-height: 25px;
+    max-width: 90%;
+  }
+  #skills ul{
+    justify-content: space-evenly;
   }
   #about,
   #portfolio{
