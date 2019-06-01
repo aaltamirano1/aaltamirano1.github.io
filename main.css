@@ -223,6 +223,9 @@ nav ul a{
 }
 /*////////////////////////////////////////////////////////////////// MEDIA QUERIES ///*/
 @media screen and (max-width: 800px){
+  #about{
+    background: linear-gradient(270deg, transparent 0, #ff6b6b 30%);
+  }
   #skills ul li{
     margin: 10px 10px 10px 0;
   }
@@ -266,9 +269,6 @@ nav ul a{
     min-height: 40vh;
     height: auto;
         background-position: left;
-  }
-  #about{
-    background: linear-gradient(270deg, transparent 0, #ff6b6b 30%);
   }
   #about p{
     line-height: 25px;
