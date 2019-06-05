@@ -37,11 +37,11 @@ nav ul a{
   height: 40vh;
 }
 #about{
-	box-sizing: border-box;
-	display: flex;
+  box-sizing: border-box;
+  display: flex;
   height: 100%;
-	flex-direction: column;
-	justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 60px 40px 40px 40px;
   background: linear-gradient(270deg, transparent 0, #ff6b6b 40%);
   color: white;
@@ -158,7 +158,6 @@ nav ul a{
 #bio p{
   margin-bottom: 10px;
 }
-
 /*/////////////////////////////////////// CONTACT ///*/
 #contact{
   box-sizing: border-box;
@@ -167,16 +166,16 @@ nav ul a{
   color: #2f3542;
   border-bottom: 40px solid #ff6b6b;
   display: flex;
-	flex-direction: column;
-	align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 #contact form{
-	max-width: 100%;
-	padding: 30px;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  max-width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #contact input,
 #contact textarea{
@@ -246,8 +245,8 @@ nav ul a{
     cursor: pointer;
   }
   .lightbox img{
-  	max-width: 100%;
-	  display: none;
+    max-width: 100%;
+    display: none;
   }
   #contact{
     height: auto;
@@ -266,7 +265,7 @@ nav ul a{
   #about-img-bg{
     min-height: 40vh;
     height: auto;
-        background-position: left;
+    background-position: left;
   }
   #about p{
     line-height: 25px;
