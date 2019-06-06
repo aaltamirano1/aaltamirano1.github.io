@@ -79,7 +79,7 @@ nav ul a{
 /*////////////////////////////////////////////////////////////////// PORTFOLIO ///*/
 #portfolio{
   box-sizing: border-box;
-  padding: 60px 40px 40px 40px;
+  padding: 60px 40px 80px 40px;
   background-color: #48dbfb;
   color: white;
 }
@@ -155,7 +155,7 @@ nav ul a{
 #bio{
   box-sizing: border-box;
   width: 50vw;
-  padding: 70px 70px 50px 40px;
+  padding: 60px 60px 60px 40px;
   background-color: #feca57;
   border-bottom: 40px solid #ff6b6b;
   color: white;
@@ -306,6 +306,7 @@ nav ul a{
   #bio{
     width: 100%;
     border: none;
+    padding: 40px;
   }
   #contact{  	
     height: 100vh;
