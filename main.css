@@ -248,6 +248,10 @@ nav ul a{
   #portfolio #project-list .project{
     width: auto;
   }
+  .project-info-card,
+  .project:nth-child(even) .project-info-card{
+    border-radius: 0;
+  }
   .button-box a,
   .button-box a:visited,
   .button-box button.project-screenshot{
