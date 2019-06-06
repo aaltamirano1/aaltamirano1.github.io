@@ -89,24 +89,32 @@ nav ul a{
 .project{
   width: 100%;
   background-position: top right;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border-bottom: 10px solid #0abde3;
   border-radius: 5px;
   box-shadow: inset 345px 5px 15px 0px rgba(50,50 , 50,0.31);
 }
-#portfolio #project-list .project-info-card{
+.project:nth-child(even){
+  display: flex;
+  justify-content: flex-end;
+  background-position: top left;
+  box-shadow: inset -345px 5px 15px 0px rgba(50,50 , 50,0.31);
+}
+.project-info-card{
   width: 300px;
   min-height: 350px;
   height: 100%;
   padding: 30px 15px;
   color: #0abde3;
   background-color: white;
-
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+.project:nth-child(even) .project-info-card{
+  border-radius: 0 5px 0 0;
 }
 #portfolio .project-info-card i{
   font-size: 2.5em;
@@ -147,16 +155,23 @@ nav ul a{
 #bio{
   box-sizing: border-box;
   width: 50vw;
-  padding: 50px 40px 40px 40px;
+  padding: 70px 70px 50px 40px;
   background-color: #feca57;
   border-bottom: 40px solid #ff6b6b;
   color: white;
 }
 #bio h2{
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
-#bio p{
-  margin-bottom: 10px;
+#bio article{
+  border-top: 8px solid #fcb941;
+  border-bottom: 8px solid #fcb941;
+  border-radius: 15px;
+  padding: 15px 0 10px 0;
+}
+#bio article p{
+  margin-bottom: 12px;
+  color: #2f3542;
 }
 /*/////////////////////////////////////// CONTACT ///*/
 #contact{
@@ -278,7 +293,7 @@ nav ul a{
   #portfolio{
     padding: 80px 20px 40px 20px;
   }
-  #portfolio #project-list .project-info-card{
+  .project-info-card{
     box-sizing: border-box;
     width: 100%;
   }
