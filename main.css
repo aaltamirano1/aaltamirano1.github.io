@@ -43,7 +43,7 @@ nav ul a{
   flex-direction: column;
   justify-content: space-between;
   padding: 60px 40px 40px 40px;
-  background: linear-gradient(270deg, transparent 0, #96281b 40%);
+  background: linear-gradient(270deg, transparent 0, black 40%);
   color: white;
 }
 #about h1{
@@ -157,7 +157,7 @@ nav ul a{
   width: 50vw;
   padding: 60px 60px 60px 40px;
   background-color: #2f3640;
-  border-bottom: 40px solid #e84118;
+  border-bottom: 40px solid black;
   color: white;
 }
 #bio h2{
@@ -179,7 +179,7 @@ nav ul a{
   width: 50vw;
   padding-top: 80px;
   color: #2f3542;
-  border-bottom: 40px solid #e84118;
+  border-bottom: 40px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,7 +239,7 @@ nav ul a{
 /*////////////////////////////////////////////////////////////////// MEDIA QUERIES ///*/
 @media screen and (max-width: 800px){
   #about{
-    background: linear-gradient(270deg, transparent 0, #e84118 30%);
+    background: linear-gradient(270deg, transparent 0, black 30%);
   }
   #skills ul li{
     margin: 10px 10px 10px 0;
