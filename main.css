@@ -49,6 +49,9 @@ nav ul a{
 #about h1{
   margin-bottom: 15px;
 }
+#about p{
+  max-width: 75%;
+}
 #about h4{
   margin: 40px 0 10px 0;
 }
