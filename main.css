@@ -43,7 +43,7 @@ nav ul a{
   flex-direction: column;
   justify-content: space-between;
   padding: 60px 40px 40px 40px;
-  background: linear-gradient(270deg, transparent 0, #e84118 40%);
+  background: linear-gradient(270deg, transparent 0, #d35400 40%);
   color: white;
 }
 #about h1{
@@ -63,7 +63,7 @@ nav ul a{
 }
 /*////////////////////////////////////////////////////////////////// SKILLS ///*/
 #skills{
-  background-color: #84817a;
+  background-color: #1e824c;
   color: white;
   padding: 40px;
 }
